@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading page</title>
+    <style>
+      .custom-loadig {
+        width: 40px;
+        height: 40px;
+        border: 1px solid grey;
+        border-top: 3px solid red;
+        border-radius: 50%;
+        animation: loading 1000ms ease infinite;
+      }
+      @keyframes loading {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+        /* from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mx-4">
+      <div class="custom-loadig"></div>
+    </div>
+  </body>
+</html>
